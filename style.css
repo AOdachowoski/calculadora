@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #595959;
+}
+
+.calculator {
+  position: relative;
+  width: 340px;
+  padding: 20px;
+  border-radius: 20px;
+  -webkit-box-shadow: 5px 5px 15px 5px #000;
+  box-shadow: 5px 5px 15px 5px #000;
+  background: #b48440;
+}
+
+.calculator .buttons {
+  position: relative;
+  display: grid;
+}
+
+.calculator .buttons #value {
+  position: relative;
+  grid-column: span 4;
+  user-select: none;
+  overflow: none;
+  width: 100%;
+  text-align: end;
+  color: #fffbff;
+  background: #373737;
+  height: 100px;
+  line-height: 100px;
+  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 20px #000;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  padding: 0 20px;
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+}
+
+.calculator .buttons span {
+  position: relative;
+  padding: 10px;
+  -webkit-box-shadow: 2px 5px 16px 0px #000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 2px 5px 16px 0px #000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  margin: 10px;
+  cursor: pointer;
+  user-select: none;
+  min-width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  color: #000;
+  border: 2px solid #212324;
+  border-radius: 10px;
+}
+
+.calculator .buttons span:active{
+    box-shadow: inset 2px 5px 16px 0px #000, 
+    inset 5px 5px 15px 5px rgba(0, 0, 0, 0);   
+}
+
+.calculator .buttons span#clear{
+    grid-column: span 2;
+    background: #f44336;
+    color: #fffbff;
+    border: 2px solid #edf1f4;
+}
+
+.calculator .buttons span#plus{
+    grid-row: span 2;
+    background: #31a935;
+    color: #fffbff;
+    border: 2px solid #edf1f4;
+}
+
+.calculator .buttons span#equal{
+    grid-row: span 2;
+    background: #2196f3;
+    color: #fffbff;
+    border: 2px solid #edf1f4;
+}
